@@ -7,6 +7,7 @@ let xis = document.querySelector('.quadrado');
 xis.onclick = function(){
     modal.style.display = 'none';
     opaca.style.display = 'none';
+    document.location.reload();
 }
 
 onkeyup = function(evento){
@@ -55,10 +56,12 @@ function enviarDados(){
     else{
         modal.style.display = 'flex';
         opaca.style.display = 'flex';     
+        event.preventDefault();
         return true;
 
     }
 }
+
 
 
 

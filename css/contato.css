@@ -90,10 +90,8 @@ button{
     height: 45px;
     padding: 0 10px;
     border: 1px solid rgba(0, 0, 0, 0.5);
-    /* background-color: #FF6464; */
     background-color: white;
     border-radius: 5px;
-    font-size: 100%;
     outline: none;
     color: rgba(0, 0, 0, 0.5);
     font-size: 20px;
@@ -174,15 +172,51 @@ button:hover{
 }
 
 @media screen and (max-width: 850px){
-    .containContact{
-        width: 80%;
-    }
     section{
         height: calc(100vh - 60px);
         margin-top: 60px;
     }
+    
+    .containContact{
+        width: 85%;
+    }
+
+    .containContact h2{
+        font-size: 22px;
+    }
+    
+    .inputs{
+    width: 70%;
+    height: 98px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    }
+
+    .inputs input{
+        width: 100%;
+    }
+
+    input,textarea{
+        font-size: 90%;
+    }
+
+    textarea{
+        height: 120px;
+        padding: 5px 10px;
+        font-size: 120%;
+        width: 70%;
+        resize: none;
+    }
+
+    button{
+        width: 40%;
+        font-size: 16px;
+    }
+
     .modal{
-        width: 60%;
-        height: 52%;
+        width: 70%;
+        height: 40%;
     }
 }
