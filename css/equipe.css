@@ -60,7 +60,8 @@ section{
 }
 
 .trNome{
-    transition: 1s;;
+    transition: 1s;
+    text-align: center;
     margin: 0;
     position: absolute;
     box-shadow: 0 0 5px;
@@ -129,7 +130,28 @@ section{
 
 @media screen and (max-width: 850px){
     section{
-        height: calc(100vh - 60px);
+        height: calc(280vh - 60px);
         margin-top: 60px;
+        flex-direction: column;
     }
+    .divProfile{
+        height: calc(90% /3);
+        width: 90%;
+        background-color: white;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        overflow: hidden;
+        flex-direction: column;
+        position: relative;
+        transition: .3s;
+        box-sizing: border-box;
+        box-shadow: 0 0 5px black;
+    }
+
+    .divProfile:nth-child(1){
+        margin-top: -18px;
+    }
+
 }
