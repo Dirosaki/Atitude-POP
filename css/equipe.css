@@ -101,10 +101,6 @@ section{
     background-color: white;
 }
 
-.social:hover{
-    box-shadow: 0 0 4px 2px #9B0E0E;
-}
-
 .social a{
     height: 100%;
     width: 100%;
