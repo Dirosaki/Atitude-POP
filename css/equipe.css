@@ -1,8 +1,17 @@
-section{
+.divisionOne{
     height: calc(100vh - 70px);
     width: 100%;
     background-color: #9B0E0E;
     margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.divisionTwo{
+    height: calc(100vh);
+    width: 100%;
+    background-color: #9B0E0E;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -125,12 +134,17 @@ section{
 }
 
 @media screen and (max-width: 850px){
-    section{
+    .divisionOne{
         height: calc(280vh - 60px);
         margin-top: 60px;
         flex-direction: column;
     }
-    .divProfile{
+
+    .divisionTwo{
+        height:180.419vh;
+        flex-direction: column;
+    }
+    .divisionOne .divProfile{
         height: calc(90% /3);
         width: 90%;
         background-color: white;
@@ -146,7 +160,31 @@ section{
         box-shadow: 0 0 5px black;
     }
 
-    .divProfile:nth-child(1){
+    .divisionTwo .divProfile{
+            height: calc(90% /2);
+            width: 90%;
+            background-color: white;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            overflow: hidden;
+            flex-direction: column;
+            position: relative;
+            transition: .3s;
+            box-sizing: border-box;
+            box-shadow: 0 0 5px black;
+        }
+    
+    .divisionOne .divProfile:nth-child(1){
+        margin-top: -18px;
+    }
+
+    .divisionTwo .divProfile:nth-child(1){
+        margin-top: -69px;
+    }
+
+    .divisionTwo .divProfile:nth-child(2){
         margin-top: -18px;
     }
 
